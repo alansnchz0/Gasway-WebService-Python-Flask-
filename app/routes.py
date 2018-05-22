@@ -23,7 +23,7 @@ def download_files():
     print('downloading file')
     url = 'https://publicacionexterna.azurewebsites.net/publicaciones/places'
     r = requests.get(url)
-    with open('static/places.xml', 'wb') as f:
+    with open('/static/places.xml', 'wb') as f:
         f.write(r.content)
     print('file downloaded')
 
