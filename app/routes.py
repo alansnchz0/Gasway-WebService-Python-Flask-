@@ -17,13 +17,13 @@ def download_files():
     print('downloading file')
     url = 'https://publicacionexterna.azurewebsites.net/publicaciones/prices'
     r = requests.get(url)
-    with open('~/www/Gasway-WebService-Python-Flask-/app/static/prices.xml', 'wb') as f:
+    with open('/home/gasway/www/Gasway-WebService-Python-Flask-/app/static/prices.xml', 'wb') as f:
         f.write(r.content)
     print('file downloaded')
     print('downloading file')
     url = 'https://publicacionexterna.azurewebsites.net/publicaciones/places'
     r = requests.get(url)
-    with open('~/www/Gasway-WebService-Python-Flask-/app/static/places.xml', 'wb') as f:
+    with open('/home/gasway/www/Gasway-WebService-Python-Flask-/app/static/places.xml', 'wb') as f:
         f.write(r.content)
     print('file downloaded')
 
