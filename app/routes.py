@@ -57,7 +57,7 @@ def getStations():
     places_id = list()
     stations = list()
 
-    places_tree = ET.parse('static/places.xml')
+    places_tree = ET.parse('/home/gasway/www/Gasway-WebService-Python-Flask-/app/static/places.xml')
     places = places_tree.getroot()
     for place in places:
         data = place.find('location')
@@ -78,7 +78,7 @@ def getStations():
             stations.append(s)
             places_id.append(place.attrib)
 
-    prices_tree = ET.parse('static/prices.xml')
+    prices_tree = ET.parse('/home/gasway/www/Gasway-WebService-Python-Flask-/app/static/prices.xml')
     prices = prices_tree.getroot()
     for price in prices:
         if price.attrib in places_id:
