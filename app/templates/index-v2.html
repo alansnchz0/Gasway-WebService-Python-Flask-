@@ -20,26 +20,26 @@
 			<!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="/css/linearicons.css">
-			<link rel="stylesheet" href="/css/font-awesome.min.css">
-			<link rel="stylesheet" href="/css/bootstrap.css">
-			<link rel="stylesheet" href="/css/magnific-popup.css">
-			<link rel="stylesheet" href="/css/jquery-ui.css">
-			<link rel="stylesheet" href="/css/nice-select.css">
-			<link rel="stylesheet" href="/css/animate.min.css">
-			<link rel="stylesheet" href="/css/owl.carousel.css">
-			<link rel="stylesheet" href="/css/main.css">
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 		</head>
 		<body>
 		  <header id="header">
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
-			        <a href="index-v2.html"><img src="img/logo.png" alt="" title="" /></a>
+			        <a href="{{ url_for('index-v2.html') }}"><img src="img/logo.png" alt="" title="" /></a>
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
-			          <li><a href="index.html">Home</a></li>
+			          <li><a href="{{ url_for('index-v2.html') }}">Home</a></li>
 			          <li><a href="about.html">About</a></li>
 			          <li><a href="services.html">Services</a></li>
 			          <li><a href="portfolio.html">Portfolio</a></li>
@@ -234,7 +234,7 @@
 	                            		<div class="overlay overlay-bg"></div>
 	                            		 <img class="image img-fluid" src="img/p1.jpg" alt="">
 	                            	</div>
-									<a href="img/p1.jpg" class="img-pop-up">
+									<a href="{{ url_for('static', filename='img/p1.jpg') }}" class="img-pop-up">
 									  <div class="middle">
 									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
 									  </div>
@@ -251,7 +251,7 @@
 	                            		<div class="overlay overlay-bg"></div>
 	                            		 <img class="image img-fluid" src="img/p2.jpg" alt="">
 	                            	</div>
-									<a href="img/p2.jpg" class="img-pop-up">
+									<a href="{{ url_for('static', filename='img/p2.jpg') }}" class="img-pop-up">
 									  <div class="middle">
 									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
 									  </div>
@@ -268,7 +268,7 @@
 	                            		<div class="overlay overlay-bg"></div>
 	                            		 <img class="image img-fluid" src="img/p3.jpg" alt="">
 	                            	</div>
-									<a href="img/p3.jpg" class="img-pop-up">
+									<a href="{{ url_for('static', filename='img/p3.jpg') }}" class="img-pop-up">
 									  <div class="middle">
 									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
 									  </div>
@@ -286,7 +286,7 @@
 	                            		<div class="overlay overlay-bg"></div>
 	                            		 <img class="image img-fluid" src="img/p4.jpg" alt="">
 	                            	</div>
-									<a href="img/p4.jpg" class="img-pop-up">
+									<a href="{{ url_for('static', filename='img/p4.jpg') }}" class="img-pop-up">
 									  <div class="middle">
 									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
 									  </div>
@@ -303,7 +303,7 @@
 	                            		<div class="overlay overlay-bg"></div>
 	                            		 <img class="image img-fluid" src="img/p5.jpg" alt="">
 	                            	</div>
-									<a href="img/p5.jpg" class="img-pop-up">
+									<a href="{{ url_for('static', filename='img/p5.jpg') }}" class="img-pop-up">
 									  <div class="middle">
 									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
 									  </div>
@@ -320,7 +320,7 @@
 	                            		<div class="overlay overlay-bg"></div>
 	                            		 <img class="image img-fluid" src="img/p6.jpg" alt="">
 	                            	</div>
-									<a href="img/p6.jpg" class="img-pop-up">
+									<a href="{{ url_for('static', filename='img/p6.jpg') }}" class="img-pop-up">
 									  <div class="middle">
 									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
 									  </div>
