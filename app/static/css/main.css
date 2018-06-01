@@ -2074,8 +2074,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #8490ff !important;
 }
 
-.img-fluid {
-  max-width: 50%;
+.img-header {
+  max-width: 30%;
   height: auto;
 }
 
