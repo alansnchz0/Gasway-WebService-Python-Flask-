@@ -512,6 +512,11 @@ mark,
 }
 
 .img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+
+.img-header {
   max-width: 10%;
   height: auto;
 }
