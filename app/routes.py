@@ -43,6 +43,9 @@ atexit.register(lambda: scheduler.shutdown())
 @app.route('/index')
 def index():
     return render_template('index.html', title='Home')
+@app.route('/v2')
+def v2():
+    return render_template('index-v2.html', title='Home')
 @app.route('/80430b0bd02771d3036d126bf1d460c4', methods=['GET',])
 def getStations():
 
