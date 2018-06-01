@@ -2456,6 +2456,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 20px 0;
   font-size: 60px;
   text-transform: uppercase;
+  color: #ffffff !important;
 }
 
 @media (max-width: 991px) {
