@@ -39,8 +39,8 @@
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
 			          <li><a href="{{ url_for('v2') }}">Inicio</a></li>
-			          <li><a href="about.html">Acerca de</a></li>
-			          <li><a href="services.html">Servicios</a></li>
+			          <li><a href="#">Acerca de</a></li>
+			          <li><a href="#">Servicios</a></li>
 			        </ul>
 			      </nav><!-- #nav-menu-container -->
 		    	</div>
@@ -68,7 +68,7 @@
 
 			<!-- Start home-about Area -->
 			<section class="home-about-area pt-120">
-				<div class="container">
+				<div class="container" id="about">
 					<div class="row align-items-center justify-content-between">
 						<div class="col-lg-6 col-md-6 home-about-left">
 							<img class="img-fluid" src="{{ url_for('static', filename='img/screenshots.png') }}" alt="">
@@ -88,7 +88,7 @@
 
 			<!-- Start services Area -->
 			<section class="services-area section-gap">
-				<div class="container">
+				<div class="container" id="services">
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content  col-lg-7">
 		                    <div class="title text-center">
