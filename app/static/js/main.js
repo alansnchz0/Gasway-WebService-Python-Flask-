@@ -242,8 +242,15 @@ $(document).ready(function() {
 
     //------- scroll --------//
     jQuery(".nav-menu a, #mobile-nav a").click(function() {
-      var contentPanelId = jQuery(this).attr("id");
-      alert(contentPanelId);
+      var navId = jQuery(this).attr("id");
+      if (navId == "nav-about")
+      $('html, body').animate({
+          scrollTop: $("#about").offset().top
+      }, 2000);
+      else if (navId == "nav-services")
+      $('html, body').animate({
+          scrollTop: $("#services").offset().top
+      }, 2000);
     });
     //------- scroll --------//
 
