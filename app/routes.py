@@ -42,7 +42,7 @@ atexit.register(lambda: scheduler.shutdown())
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', title='Home')
+    return render_template('index-v2.html', title='Home')
 @app.route('/v2')
 def v2():
     return render_template('index-v2.html', title='Home')
