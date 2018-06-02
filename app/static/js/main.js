@@ -242,6 +242,7 @@ $(document).ready(function() {
 
     //------- scroll --------//
     $(".nav-menu a, #mobile-nav a").click(function() {
+      alert(event.target.id);
       if (event.target.id == "nav-about")
       $('html, body').animate({
           scrollTop: $("#about").offset().top
