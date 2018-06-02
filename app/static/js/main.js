@@ -242,11 +242,11 @@ $(document).ready(function() {
 
     //------- scroll --------//
     $(".nav-menu a, #mobile-nav a").click(function() {
-      if $(this).attr("id") == "nav-about"
+      if event.target.id == "nav-about"
       $('html, body').animate({
           scrollTop: $("#about").offset().top
       }, 2000);
-      else if $(this).attr("id") == "nav-services"
+      else if event.target.id == "nav-services"
       $('html, body').animate({
           scrollTop: $("#services").offset().top
       }, 2000);
