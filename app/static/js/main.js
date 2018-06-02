@@ -241,7 +241,7 @@ $(document).ready(function() {
     }
 
     //------- scroll --------//
-    $(".nav-menu a, #mobile-nav a").click(function() {
+    $(".nav-menu a, #mobile-nav a").click(function(event) {
       alert(event.target.id);
       if (event.target.id == "nav-about")
       $('html, body').animate({
